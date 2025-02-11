@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/contactme" method="post"> <!--action and method are basically for server purpose-->
+        UserName:<input type="text" placeholder="Enter username" required="true"> <br>
+        Password: <input type="password"><br>
+        <input type="submit">
+    </form>
+    <form action="/contace-me" method="post">
+        Date:<input type="date"><br>
+        Attach a file:<input type="file"><br>
+        Choose your favrite color:<input type="color"><br>
+        Price range:<input type="range"><br>
+        Press the Button:<input type="button" value="Click me"><br>
+        Click to submit<input type="Submit">
+
+    </form>
+    <!--lables for selecting items on click on both places e.g male,female -->
+    <form>
+        <h4>Radio buttons</h4><!--it can only select one option-->
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="male"><br>
+        <label for="female">FeMale:</label>
+        <input type="radio" id="female" name="gender" value="female"><br>
+        <label for="other">other:</label>
+        <input type="radio" id="other" name="gender" value="other"><br>
+    
+    </form>
+    <!--Checkboxes are basically used to select more than one item in form-->
+    <form>
+        <h4>Check boxes</h4>
+        <label for="c++">C++</label>
+        <input type="checkbox" name="lang" id="C++" value="C++"><br>
+        <label for="java">Java:</label>
+        <input type="checkbox" name="lang" id="java" value="Java"><br>
+        <lable for="python">Python:</lable>
+        <input type="checkbox" name="lang" id="python" value="Python"><br>
+        <h4>Dropdown form selection</h4>
+        <label for="country">Select country:</label>
+        <select name="Country" id="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="Usa">Usa</option>
+            <option value="UK">UK</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <h4>Text Box or comment box</h4><!--Basically this is user for description or leave comment or write a story-->
+         <textarea name="Comments" cols="20" rows="4">please leave a comment </textarea>
+    </form>
+</body>
+</html>
